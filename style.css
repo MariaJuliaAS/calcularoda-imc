@@ -56,3 +56,14 @@ th, td {
 summary{
     margin: 12px 0;
 }
+@media(max-width: 415px){
+    section{
+        width: 370px;
+    }
+    input[type="text"]{
+        padding-right: 150px;
+    }
+    input[type="submit"]{
+        width: 330px;
+    }
+}
