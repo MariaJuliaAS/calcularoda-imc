@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Calcule seu IMC.</h2>
+
+            <details>
+                <summary>Informações</summary>
+                <table>
+                    <tr>
+                        <th>Classificação</th>
+                        <th>IMC</th>
+                    </tr>
+                    <tr>
+                        <td>Muito abaixo do peso</td>
+                        <td>Abaixo de 17</td>
+                    </tr>
+                    <tr>
+                        <td>Abaixo do peso</td>
+                        <td>17 - 18,49</td>
+                    </tr>
+                    <tr>
+                        <td>Peso ideal</td>
+                        <td>18,50 - 24,99</td>
+                    </tr>
+                    <tr>
+                        <td>Sobrepeso</td>
+                        <td>25 - 29,99</td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade</td>
+                        <td>Maior ou igual a 30</td>
+                    </tr>
+                </table>
+            </details>
+            
+            <div class="escrita">
+                <form onsubmit="return calcular(event)"> <!--onsubmit: quando clicar no botao de calcular imc ele vai chamar o form, assim podendo chamar uma funçao no js para fazer o calculo (em funções dentro de form usa o event ele vai "limpar" os campos)-->
+                    <label >Digite seu peso:</label> <br>
+                    <input type="text" name="peso" id="peso" placeholder="Exemplo: 65"> <br><br>
+
+                    <label >Digite sua altura:</label> <br>
+                    <input type="text" name="altura" id="altura" placeholder="Exemplo: 1.70"> <br><br>
+
+                    <input type="submit" value="Calcular IMC">
+                </form>
+
+                <div id="resultado"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
